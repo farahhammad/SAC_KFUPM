@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm cache clean --force && rm -rf node_modules package-lock.json && npm install --force && npm run build",
-  "installCommand": "npm cache clean --force && npm install --force"
+  "framework": "vite",
+  "buildCommand": "npm ci && npm run build"
 }
