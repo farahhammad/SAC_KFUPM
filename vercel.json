@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm ci && npm run build",
-  "installCommand": "rm -rf node_modules && npm install"
+  "buildCommand": "npm ci --force && npm run build",
+  "installCommand": "rm -rf node_modules package-lock.json && npm install --legacy-peer-deps"
 }
