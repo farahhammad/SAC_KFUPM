@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm ci --force && npm run build",
-  "installCommand": "rm -rf node_modules package-lock.json && npm install --legacy-peer-deps"
+  "buildCommand": "rm -rf node_modules .vite && npm install && npm run build",
+  "framework": "vite"
 }
