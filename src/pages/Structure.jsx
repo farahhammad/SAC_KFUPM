@@ -31,7 +31,8 @@ export default function CouncilStructure({ t, lang = 'ar' }) {
         'جواهر العجلان': 'Jawaher Alajlan',
         'محمد الحصيني': 'Mohamed Alhusini',
         'صبا الجهني': 'Saba Aljohani',
-        'حوراء الخلف': 'Hawraa Alkhalaf'
+        'حوراء الخلف': 'Hawraa Alkhalaf',
+        'فواز الزاب': 'Fawaz Alzab'
     };
 
     const majors = {
@@ -96,6 +97,8 @@ export default function CouncilStructure({ t, lang = 'ar' }) {
                 { name: "سلمان العدوان", major: "هندسة الحاسب", email: "s202244180@kfupm.edu.sa" },
                 { name: "شهد خواهر", major: "هندسة الطيران والفضاء", email: "s202259700@kfupm.edu.sa" },
                 { name: "حوراء الخلف", major: "الهندسة الكهربائية", email: "s202265960@kfupm.edu.sa" },
+                { name: "فواز الزاب", major: "الهندسة الميكانيكية", email: "s202332790@kfupm.edu.sa" },
+
             ]
         },
         {
