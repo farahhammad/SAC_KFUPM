@@ -20,7 +20,6 @@ export default function CouncilStructure({ t, lang = 'ar' }) {
         'نعيمة الهاشم': 'Naimah Alsaidalhashim',
         'أبرار السفياني': 'Abrar Alsufyani',
         'منيرة الدوسري': 'Munirah Aldawsari',
-        'سعيد الجعران': 'Saeed Aljaran',
         'ريا البلوي': 'Ria Albalawi',
         'عبدالله السيف': 'Abdullah Alsaif',
         'عبدالمجيد الفيفي': 'Abdulmajeed Alfaifi',
@@ -77,7 +76,6 @@ export default function CouncilStructure({ t, lang = 'ar' }) {
                 {
                     teamName: lang === 'ar' ? "فريق الأنشطة الطلابية" : "Student Activities Team",
                     members: [
-                        { name: "سعيد الجعران", major: "الهندسة الميكانيكية", email: "s202165130@kfupm.edu.sa" },
                         { name: "عبدالعزيز نواز", major: "المحاسبة", email: "s202279920@kfupm.edu.sa" },
                         { name: "مهدي المطوع", major: "هندسة البترول", email: "s202261800@kfupm.edu.sa" },
                         { name: "علي المبارك", major: "الهندسة الميكانيكية", email: "s202258220@kfupm.edu.sa" },
