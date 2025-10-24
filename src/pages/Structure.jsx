@@ -60,30 +60,20 @@ export default function CouncilStructure({ t, lang = 'ar' }) {
             id: 1,
             name: lang === 'ar' ? "لجنة تجربة الطالب" : "Student Experience Committee",
             color: "#FF9900",
-            teams: [
-                {
-                    teamName: lang === 'ar' ? "فريق الخدمات الطلابية" : "Student Services Team",
-                    members: [
-                        { name: "إياد سالم", role: "قائد الفريق", email: "s202368990@kfupm.edu.sa", major: "هندسة الحاسب" },
-                        { name: "نعيمة الهاشم", major: "الهندسة الكهربائية", email: "s202271860@kfupm.edu.sa" },
-                        { name: "يزيد الغامدي", major: "الهندسة الميكانيكية", email: "s202243980@kfupm.edu.sa" },
-                        { name: "محمد الحصيني", major: "هندسة البرمجيات", email: "s202029480@kfupm.edu.sa" },
-                        { name: "عبدالمجيد الفيفي", major: "الهندسة الميكانيكية", email: "s202355890@kfupm.edu.sa" },
-                        { name: "ريا البلوي", major: "هندسة الطيران والفضاء", email: "s202272100@kfupm.edu.sa" },
-                        { name: "أبرار السفياني", major: "هندسة الطيران والفضاء", email: "s202268260@kfupm.edu.sa" }
-                    ]
-                },
-                {
-                    teamName: lang === 'ar' ? "فريق الأنشطة الطلابية" : "Student Activities Team",
-                    members: [
-                        { name: "عبدالعزيز نواز", major: "المحاسبة", email: "s202279920@kfupm.edu.sa" },
-                        { name: "مهدي المطوع", major: "هندسة البترول", email: "s202261800@kfupm.edu.sa" },
-                        { name: "علي المبارك", major: "الهندسة الميكانيكية", email: "s202258220@kfupm.edu.sa" },
-                        { name: "جواهر العجلان", major: "هندسة الطيران والفضاء", email: "s202271760@kfupm.edu.sa" },
-                        { name: "زياد تفاحة", major: "الهندسة الميكانيكية", email: "s202267480@kfupm.edu.sa" },
-                        { name: "رغد فؤاد", major: "هندسة البرمجيات", email: "s202256260@kfupm.edu.sa" }
-                    ]
-                }
+            leader: { name: "إياد سالم", email: "s202368990@kfupm.edu.sa", major: "هندسة الحاسب" },
+            members: [
+                { name: "نعيمة الهاشم", major: "الهندسة الكهربائية", email: "s202271860@kfupm.edu.sa" },
+                { name: "يزيد الغامدي", major: "الهندسة الميكانيكية", email: "s202243980@kfupm.edu.sa" },
+                { name: "محمد الحصيني", major: "هندسة البرمجيات", email: "s202029480@kfupm.edu.sa" },
+                { name: "عبدالمجيد الفيفي", major: "الهندسة الميكانيكية", email: "s202355890@kfupm.edu.sa" },
+                { name: "ريا البلوي", major: "هندسة الطيران والفضاء", email: "s202272100@kfupm.edu.sa" },
+                { name: "أبرار السفياني", major: "هندسة الطيران والفضاء", email: "s202268260@kfupm.edu.sa" },
+                { name: "عبدالعزيز نواز", major: "المحاسبة", email: "s202279920@kfupm.edu.sa" },
+                { name: "مهدي المطوع", major: "هندسة البترول", email: "s202261800@kfupm.edu.sa" },
+                { name: "علي المبارك", major: "الهندسة الميكانيكية", email: "s202258220@kfupm.edu.sa" },
+                { name: "جواهر العجلان", major: "هندسة الطيران والفضاء", email: "s202271760@kfupm.edu.sa" },
+                { name: "زياد تفاحة", major: "الهندسة الميكانيكية", email: "s202267480@kfupm.edu.sa" },
+                { name: "رغد فؤاد", major: "هندسة البرمجيات", email: "s202256260@kfupm.edu.sa" }
             ]
         },
         {
@@ -96,7 +86,6 @@ export default function CouncilStructure({ t, lang = 'ar' }) {
                 { name: "شهد خواهر", major: "هندسة الطيران والفضاء", email: "s202259700@kfupm.edu.sa" },
                 { name: "حوراء الخلف", major: "الهندسة الكهربائية", email: "s202265960@kfupm.edu.sa" },
                 { name: "فواز الزاب", major: "الهندسة الميكانيكية", email: "s202332790@kfupm.edu.sa" },
-
             ]
         },
         {
