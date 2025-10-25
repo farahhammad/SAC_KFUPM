@@ -97,8 +97,8 @@ export default function Complaints({ t, lang }) {
       // ✅ عرض رسالة نجاح
       show(
         lang === "ar"
-          ? "تم إرسال الشكوى بنجاح ✅"
-          : "Complaint submitted successfully ✅"
+          ? "تم إرسال ردك بنجاح "
+          : "Your reply has been submitted successfully "
       );
       setTimeout(() => textareaRef.current?.focus(), 0);
     } catch (err) {
