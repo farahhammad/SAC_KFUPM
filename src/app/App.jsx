@@ -178,40 +178,6 @@ export default function App(){
                         gap: '48px',
                         marginBottom: '32px'
                     }}>
-                        {/* Council Text + Deanship Logo */}
-                        <div>
-
-                            {/* Deanship Logo - Clickable */}
-                            <a
-                                href="https://studentaffairs.kfupm.edu.sa/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{
-                                    display: 'inline-block',
-                                    transition: 'all 0.3s ease',
-                                    marginTop: '12px'
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.opacity = '0.7'
-                                    e.currentTarget.style.transform = 'translateY(-2px)'
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.opacity = '1'
-                                    e.currentTarget.style.transform = 'translateY(0)'
-                                }}
-                            >
-                                <img
-                                    src="/Full_Horizontal.png"
-                                    alt={t.deanshipStudentAffairs}
-                                    style={{
-                                        maxWidth: '250px',
-                                        width: '100%',
-                                        height: 'auto'
-                                    }}
-                                />
-                            </a>
-                        </div>
-
                         {/* Contact Us */}
                         <div>
                             <h4 style={{
@@ -325,7 +291,43 @@ export default function App(){
                                 </a>
                             </div>
                         </div>
+
+                        {/* Council Text + Deanship Logo */}
+                        <div>
+
+                            {/* Deanship Logo - Clickable */}
+                            <a
+                                href="https://studentaffairs.kfupm.edu.sa/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    display: 'inline-block',
+                                    transition: 'all 0.3s ease',
+                                    marginTop: '12px'
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.opacity = '0.7'
+                                    e.currentTarget.style.transform = 'translateY(-2px)'
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.opacity = '1'
+                                    e.currentTarget.style.transform = 'translateY(0)'
+                                }}
+                            >
+                                <img
+                                    src="/Full_Horizontal.png"
+                                    alt={t.deanshipStudentAffairs}
+                                    style={{
+                                        maxWidth: '250px',
+                                        width: '100%',
+                                        height: 'auto'
+                                    }}
+                                />
+                            </a>
+                        </div>
+
                     </div>
+
 
                     {/* Copyright */}
                     <div style={{
