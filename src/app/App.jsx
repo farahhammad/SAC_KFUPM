@@ -12,14 +12,16 @@ const STRINGS = {
         complaints:"Complaints & Suggestions",
         achievements:"Achievements",
         structure:"Council Structure",
-        heroTitle:"The Student Advisory Council, affiliated with the Deanship of Student Affairs at KFUPM",
+        heroTitle:"The Student Advisory Council",
         heroBody:"Represents the voice of students and reinforces their role in the decision-making process.",
         ctaComplaints:"Go to Complaints",
         ctaLearn:"Learn more",
         footerNote:"All rights reserved",
         // lang:"Language",
         followUs:"Follow Us",
-        university:"King Fahd University of Petroleum & Minerals"
+        university:"King Fahd University of Petroleum & Minerals",
+        deanshipStudentAffairs:"Deanship of Student Affairs",
+        contactUs:"Contact Us"
     },
     ar: {
         brand:"المجلس الاستشاري الطلابي",
@@ -27,14 +29,16 @@ const STRINGS = {
         complaints:"الشكاوى والمقترحات",
         achievements:"إنجازات المجلس",
         structure:"هيكلة المجلس",
-        heroTitle:"المجلس الاستشاري الطلابي التابع لعمادة شؤون الطلاب في جامعة الملك فهد للبترول والمعادن",
+        heroTitle:"المجلس الاستشاري الطلابي",
         heroBody:"لتمثيل صوت الطلاب وتأكيد دورهم في صناعة القرار",
         ctaComplaints:"الذهاب لصفحة الشكاوى والمقترحات",
         ctaLearn:"اعرف المزيد",
         footerNote:"جميع الحقوق محفوظة",
         // lang:"اللغة",
         followUs:"تابعنا",
-        university:"جامعة الملك فهد للبترول والمعادن"
+        university:"جامعة الملك فهد للبترول والمعادن",
+        deanshipStudentAffairs:"عمادة شؤون الطلاب",
+        contactUs:"تواصل معنا"
     }
 }
 
@@ -51,149 +55,6 @@ export default function App(){
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
-
-    // useEffect(() => {
-    //     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr'
-    //     document.documentElement.lang = lang
-    //     localStorage.setItem('lang', lang)
-    //     document.body.style.fontFamily = (lang === 'ar')
-    //         ? `'CouncilArabic','CouncilEnglish','Tajawal','Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif`
-    //         : `'CouncilEnglish','CouncilArabic','Inter','Tajawal',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif`
-    // }, [lang])
-    // useEffect(() => {
-    //     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr'
-    //     document.documentElement.lang = lang
-    //     localStorage.setItem('lang', lang)
-    //
-    //     // تطبيق الخط المناسب
-    //     if (lang === 'ar') {
-    //         document.body.style.fontFamily = `'CouncilArabic', 'Tajawal', -apple-system, sans-serif`
-    //     } else {
-    //         document.body.style.fontFamily = `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`
-    //     }
-    //
-    //     // إضافة CSS ديناميكي للعناوين بالإنجليزي
-    //     let styleElement = document.getElementById('dynamic-typography')
-    //     if (!styleElement) {
-    //         styleElement = document.createElement('style')
-    //         styleElement.id = 'dynamic-typography'
-    //         document.head.appendChild(styleElement)
-    //     }
-    //
-    //     // if (lang === 'en') {
-    //     //     styleElement.textContent = `
-    //     //     * {
-    //     //         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    //     //     }
-    //     //     h1, h2, h3, h4, h5, h6, .hd {
-    //     //         font-weight: 800 !important;
-    //     //         letter-spacing: -0.025em !important;
-    //     //     }
-    //     //     .hero h1 {
-    //     //         font-weight: 900 !important;
-    //     //     }
-    //     //     .card h3 {
-    //     //         font-weight: 700 !important;
-    //     //     }
-    //     // `
-    //     // }
-    //
-    //     // else {
-    //     //     styleElement.textContent = `
-    //     //     * {
-    //     //         font-family: 'CouncilArabic', 'Tajawal', -apple-system, sans-serif !important;
-    //     //     }
-    //     // `
-    //     // }
-    //     if (lang === 'en') {
-    //         styleElement.textContent = `
-    //     body, p, div, span {
-    //         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    //     }
-    //     .hero h1 {
-    //         font-size: 28px !important;
-    //         font-weight: 700 !important;
-    //         letter-spacing: -0.02em !important;
-    //     }
-    //     .card h3 {
-    //         font-size: 18px !important;
-    //         font-weight: 600 !important;
-    //     }
-    //     .hd {
-    //         font-size: 16px !important;
-    //         font-weight: 700 !important;
-    //     }
-    //     .link {
-    //         font-size: 14px !important;
-    //     }
-    //     .nav {
-    //         font-size: 14px !important;
-    //     }
-    // `
-    //     } else {
-    //         styleElement.textContent = ''
-    //     }
-    // }, [lang])
-
-    // useEffect(() => {
-    //     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr'
-    //     document.documentElement.lang = lang
-    //     localStorage.setItem('lang', lang)
-    //
-    //     // إضافة transition للـ body
-    //     document.body.style.transition = 'font-family 0.3s ease, font-size 0.3s ease'
-    //
-    //     // تطبيق الخط المناسب
-    //     if (lang === 'ar') {
-    //         document.body.style.fontFamily = `'CouncilArabic', 'Tajawal', -apple-system, sans-serif`
-    //     } else {
-    //         document.body.style.fontFamily = `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`
-    //     }
-    //
-    //     // إضافة CSS ديناميكي للعناوين بالإنجليزي
-    //     let styleElement = document.getElementById('dynamic-typography')
-    //     if (!styleElement) {
-    //         styleElement = document.createElement('style')
-    //         styleElement.id = 'dynamic-typography'
-    //         document.head.appendChild(styleElement)
-    //     }
-    //
-    //     if (lang === 'en') {
-    //         styleElement.textContent = `
-    //         * {
-    //             transition: font-size 0.2s ease, font-weight 0.2s ease;
-    //         }
-    //         body, p, div, span {
-    //             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    //         }
-    //         .hero h1 {
-    //             font-size: 28px !important;
-    //             font-weight: 700 !important;
-    //             letter-spacing: -0.02em !important;
-    //         }
-    //         .card h3 {
-    //             font-size: 18px !important;
-    //             font-weight: 600 !important;
-    //         }
-    //         .hd {
-    //             font-size: 16px !important;
-    //             font-weight: 700 !important;
-    //         }
-    //         .link {
-    //             font-size: 14px !important;
-    //         }
-    //         .nav {
-    //             font-size: 14px !important;
-    //         }
-    //     `
-    //     } else {
-    //         styleElement.textContent = `
-    //         * {
-    //             transition: font-size 0.2s ease, font-weight 0.2s ease;
-    //         }
-    //     `
-    //     }
-    // }, [lang])
 
     useEffect(() => {
         document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr'
@@ -265,7 +126,7 @@ export default function App(){
             }}>
 
 
-            <div className="nav-inner container">
+                <div className="nav-inner container">
                     <Link to="/" className="brand">
                         <img src="/logo.png" alt="Council logo" />
                         <div>
@@ -293,231 +154,188 @@ export default function App(){
                 </div>
             </nav>
 
-            <div className="container" style={{paddingTop: '100px'}}>
-            <div className={lang === 'ar' ? 'rtl' : 'ltr'}>
-                    <Routes>
-                        <Route path="/" element={<Home t={t} lang={lang} navigate={navigate} />} />
-                        <Route path="/complaints" element={<Complaints t={t} lang={lang} />} />
-                        <Route path="/achievements" element={<Achievements t={t} lang={lang} />} />
-                        <Route path="/structure" element={<Structure t={t} lang={lang} />} />
-                    </Routes>
-                </div>
+            <div style={{height: '80px'}}></div>
 
-                <div className="footer paper" style={{marginTop: 40, animation: 'fadeInUp 0.6s ease-out', padding: '40px 32px'}}>
+            <Routes>
+                <Route path="/" element={<Home t={t} lang={lang}/>} />
+                <Route path="/complaints" element={<Complaints t={t} lang={lang}/>} />
+                <Route path="/achievements" element={<Achievements t={t} lang={lang}/>} />
+                <Route path="/structure" element={<Structure t={t} lang={lang}/>} />
+            </Routes>
+
+            {/* FOOTER */}
+            <div style={{
+                marginTop: '60px',
+                background: '#FFFFFF',
+                borderTop: '1px solid #E5E7EB',
+                padding: '40px 20px 24px'
+            }}>
+                <div className="container">
+                    {/* Simple Grid Layout */}
                     <div style={{
-                        maxWidth: '1100px',
-                        margin: '0 auto',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '40px'
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                        gap: '48px',
+                        marginBottom: '32px'
                     }}>
-                        {/* Main Content - Three Columns */}
-                        <div style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-                            gap: '40px',
-                            alignItems: 'start'
-                        }}>
-                            {/* Column 1: Brand Info */}
-                            <div>
-                                <div style={{
-                                    fontWeight: '700',
-                                    fontSize: '18px',
-                                    marginBottom: '12px',
-                                    color: '#00733E'
-                                }}>
-                                    {t.brand}
-                                </div>
-                                <div style={{
-                                    color: '#6B7280',
-                                    fontSize: '14px',
-                                    lineHeight: '1.6'
-                                }}>
-                                    {t.university}
-                                </div>
-                            </div>
+                        {/* Council Text + Deanship Logo */}
+                        <div>
 
-                            {/* Column 2: Contact */}
-                            <div>
-                                <div style={{
-                                    fontWeight: '700',
-                                    fontSize: '16px',
-                                    marginBottom: '16px',
-                                    color: '#111827'
-                                }}>
-                                    {lang === 'ar' ? 'تواصل معنا' : 'Contact Us'}
-                                </div>
-                                <a href="mailto:sac@kfupm.edu.sa" style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '10px',
-                                    color: '#00733E',
-                                    textDecoration: 'none',
-                                    fontWeight: '600',
-                                    fontSize: '14px',
+                            {/* Deanship Logo - Clickable */}
+                            <a
+                                href="https://studentaffairs.kfupm.edu.sa/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    display: 'inline-block',
                                     transition: 'all 0.3s ease',
-                                    padding: '8px 0'
-                                }}>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <rect x="2" y="4" width="20" height="16" rx="2"/>
-                                        <path d="m2 7 10 7 10-7"/>
+                                    marginTop: '12px'
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.opacity = '0.7'
+                                    e.currentTarget.style.transform = 'translateY(-2px)'
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.opacity = '1'
+                                    e.currentTarget.style.transform = 'translateY(0)'
+                                }}
+                            >
+                                <img
+                                    src="/Full_Horizontal.png"
+                                    alt={t.deanshipStudentAffairs}
+                                    style={{
+                                        maxWidth: '250px',
+                                        width: '100%',
+                                        height: 'auto'
+                                    }}
+                                />
+                            </a>
+                        </div>
+
+                        {/* Contact Us */}
+                        <div>
+                            <h4 style={{
+                                fontSize: '16px',
+                                fontWeight: '600',
+                                color: '#374151',
+                                marginBottom: '12px'
+                            }}>
+                                {t.contactUs}
+                            </h4>
+                            <a
+                                href="mailto:sac@kfupm.edu.sa"
+                                style={{
+                                    color: '#00733E',
+                                    fontSize: '15px',
+                                    textDecoration: 'none',
+                                    transition: 'color 0.2s ease'
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.color = '#005a31'}
+                                onMouseLeave={(e) => e.currentTarget.style.color = '#00733E'}
+                            >
+                                sac@kfupm.edu.sa
+                            </a>
+                        </div>
+
+                        {/* Follow Us */}
+                        <div>
+                            <h4 style={{
+                                fontSize: '16px',
+                                fontWeight: '600',
+                                color: '#374151',
+                                marginBottom: '12px'
+                            }}>
+                                {t.followUs}
+                            </h4>
+                            <div style={{
+                                display: 'flex',
+                                gap: '12px'
+                            }}>
+                                {/* X (Twitter) */}
+                                <a
+                                    href="https://x.com/kfupm_sac"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="X"
+                                    style={{
+                                        width: '44px',
+                                        height: '44px',
+                                        borderRadius: '10px',
+                                        background: '#F9FAFB',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        transition: 'all 0.3s ease',
+                                        border: '2px solid #E5E7EB'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = '#000000'
+                                        e.currentTarget.style.borderColor = '#000000'
+                                        e.currentTarget.style.transform = 'translateY(-3px)'
+                                        e.currentTarget.querySelector('svg').style.stroke = '#FFFFFF'
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = '#F9FAFB'
+                                        e.currentTarget.style.borderColor = '#E5E7EB'
+                                        e.currentTarget.style.transform = 'translateY(0)'
+                                        e.currentTarget.querySelector('svg').style.stroke = '#00733E'
+                                    }}
+                                >
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00733E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{transition: 'stroke 0.3s ease'}}>
+                                        <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
                                     </svg>
-                                    sac@kfupm.edu.sa
+                                </a>
+
+                                {/* Instagram */}
+                                <a
+                                    href="https://instagram.com/kfupm_sac"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram"
+                                    style={{
+                                        width: '44px',
+                                        height: '44px',
+                                        borderRadius: '10px',
+                                        background: '#F9FAFB',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        transition: 'all 0.3s ease',
+                                        border: '2px solid #E5E7EB'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = '#E4405F'
+                                        e.currentTarget.style.borderColor = '#E4405F'
+                                        e.currentTarget.style.transform = 'translateY(-3px)'
+                                        e.currentTarget.querySelector('svg').style.stroke = '#FFFFFF'
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = '#F9FAFB'
+                                        e.currentTarget.style.borderColor = '#E5E7EB'
+                                        e.currentTarget.style.transform = 'translateY(0)'
+                                        e.currentTarget.querySelector('svg').style.stroke = '#00733E'
+                                    }}
+                                >
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00733E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{transition: 'stroke 0.3s ease'}}>
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
                                 </a>
                             </div>
-
-                            {/* Column 3: Social Media */}
-                            <div>
-                                <div style={{
-                                    fontWeight: '700',
-                                    fontSize: '16px',
-                                    marginBottom: '16px',
-                                    color: '#111827'
-                                }}>
-                                    {t.followUs}
-                                </div>
-                                <div style={{
-                                    display: 'flex',
-                                    gap: '12px',
-                                    flexWrap: 'wrap'
-                                }}>
-                                    {/* X (Twitter) */}
-                                    <a
-                                        href="https://x.com/kfupm_sac"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="X"
-                                        style={{
-                                            width: '44px',
-                                            height: '44px',
-                                            borderRadius: '10px',
-                                            background: '#F9FAFB',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            transition: 'all 0.3s ease',
-                                            border: '2px solid #E5E7EB'
-                                        }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.background = '#000000'
-                                            e.currentTarget.style.borderColor = '#000000'
-                                            e.currentTarget.style.transform = 'translateY(-3px)'
-                                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)'
-                                            e.currentTarget.querySelector('svg').style.stroke = '#FFFFFF'
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.background = '#F9FAFB'
-                                            e.currentTarget.style.borderColor = '#E5E7EB'
-                                            e.currentTarget.style.transform = 'translateY(0)'
-                                            e.currentTarget.style.boxShadow = 'none'
-                                            e.currentTarget.querySelector('svg').style.stroke = '#00733E'
-                                        }}
-                                    >
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00733E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{transition: 'stroke 0.3s ease'}}>
-                                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
-                                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
-                                        </svg>
-                                    </a>
-
-                                    {/* LinkedIn */}
-                                    {/*<a*/}
-                                    {/*    href="https://linkedin.com/company/sac-kfupm"*/}
-                                    {/*    target="_blank"*/}
-                                    {/*    rel="noopener noreferrer"*/}
-                                    {/*    aria-label="LinkedIn"*/}
-                                    {/*    style={{*/}
-                                    {/*        width: '44px',*/}
-                                    {/*        height: '44px',*/}
-                                    {/*        borderRadius: '10px',*/}
-                                    {/*        background: '#F9FAFB',*/}
-                                    {/*        display: 'flex',*/}
-                                    {/*        alignItems: 'center',*/}
-                                    {/*        justifyContent: 'center',*/}
-                                    {/*        transition: 'all 0.3s ease',*/}
-                                    {/*        border: '2px solid #E5E7EB'*/}
-                                    {/*    }}*/}
-                                    {/*    onMouseEnter={(e) => {*/}
-                                    {/*        e.currentTarget.style.background = '#0A66C2'*/}
-                                    {/*        e.currentTarget.style.borderColor = '#0A66C2'*/}
-                                    {/*        e.currentTarget.style.transform = 'translateY(-3px)'*/}
-                                    {/*        e.currentTarget.style.boxShadow = '0 4px 12px rgba(10,102,194,0.3)'*/}
-                                    {/*        e.currentTarget.querySelector('svg').style.stroke = '#FFFFFF'*/}
-                                    {/*    }}*/}
-                                    {/*    onMouseLeave={(e) => {*/}
-                                    {/*        e.currentTarget.style.background = '#F9FAFB'*/}
-                                    {/*        e.currentTarget.style.borderColor = '#E5E7EB'*/}
-                                    {/*        e.currentTarget.style.transform = 'translateY(0)'*/}
-                                    {/*        e.currentTarget.style.boxShadow = 'none'*/}
-                                    {/*        e.currentTarget.querySelector('svg').style.stroke = '#00733E'*/}
-                                    {/*    }}*/}
-                                    {/*>*/}
-                                    {/*    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00733E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{transition: 'stroke 0.3s ease'}}>*/}
-                                    {/*        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>*/}
-                                    {/*        <rect x="2" y="9" width="4" height="12"/>*/}
-                                    {/*        <circle cx="4" cy="4" r="2"/>*/}
-                                    {/*    </svg>*/}
-                                    {/*</a>*/}
-
-                                    {/* Instagram */}
-                                    <a
-                                        href="https://instagram.com/kfupm_sac"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="Instagram"
-                                        style={{
-                                            width: '44px',
-                                            height: '44px',
-                                            borderRadius: '10px',
-                                            background: '#F9FAFB',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            transition: 'all 0.3s ease',
-                                            border: '2px solid #E5E7EB'
-                                        }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.background = '#E4405F'
-                                            e.currentTarget.style.borderColor = '#E4405F'
-                                            e.currentTarget.style.transform = 'translateY(-3px)'
-                                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(228,64,95,0.3)'
-                                            e.currentTarget.querySelector('svg').style.stroke = '#FFFFFF'
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.background = '#F9FAFB'
-                                            e.currentTarget.style.borderColor = '#E5E7EB'
-                                            e.currentTarget.style.transform = 'translateY(0)'
-                                            e.currentTarget.style.boxShadow = 'none'
-                                            e.currentTarget.querySelector('svg').style.stroke = '#00733E'
-                                        }}
-                                    >
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00733E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{transition: 'stroke 0.3s ease'}}>
-                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
+                    </div>
 
-                        {/* Divider */}
-                        <div style={{
-                            height: '1px',
-                            background: '#E5E7EB',
-                            margin: '0'
-                        }}></div>
-
-                        {/* Copyright Section */}
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            color: '#9CA3AF',
-                            fontSize: '14px',
-                            textAlign: 'center'
-                        }}>
-                            © {new Date().getFullYear()} {t.brand} · {t.footerNote}
-                        </div>
+                    {/* Copyright */}
+                    <div style={{
+                        borderTop: '1px solid #E5E7EB',
+                        paddingTop: '20px',
+                        textAlign: 'center',
+                        color: '#9CA3AF',
+                        fontSize: '14px'
+                    }}>
+                        © {new Date().getFullYear()} {t.brand} · {t.footerNote}
                     </div>
                 </div>
             </div>
